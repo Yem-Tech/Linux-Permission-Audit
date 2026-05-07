@@ -393,7 +393,7 @@ chmod a=w [target]    # Set write only for all (replaces existing)
 
 ## Author
 
-**Cybersecurity Analyst | HypertechAi**
+**Olayemi Owoeye | HypertechAi**
 Certifications: CCNA | Microsoft Azure | AWS | CompTIA Security+ | Python | Cybersecurity
 Currently pursuing: Advanced Cybersecurity Specialisation
 
