@@ -79,7 +79,18 @@ The audit was conducted in a clean working directory under `/home/kali`. Initial
 **Baseline permission state confirmed using:**
 ```bash
 ls -l
+pwd
 ```
+
+### Screenshot 1 — Baseline directory listing and working directory confirmation
+> *Insert screenshot: `01.png` — shows `ls` and `pwd` output confirming working directory at `/home/kali`*
+
+![Baseline directory listing](screenshots/01.png)
+
+### Screenshot 2 — Directory and file creation
+> *Insert screenshot: `02.png` — shows `mkdir Footballer Coach`, `touch textfile.tx`, and updated `ls` confirming new entries*
+
+![Directory and file creation](screenshots/02.png)
 
 ---
 
@@ -113,8 +124,6 @@ The numeric method assigns permissions using a three-digit octal value, where ea
 ```bash
 chmod [octal] [target]
 ```
-
----
 
 ### 4.2 Symbolic Method
 
@@ -152,7 +161,15 @@ chmod [who][operator][permission] [target]
 chmod 755 Coach
 ```
 
-**Result:** `drwxr-xr-x` — Owner retains full access; group and others restricted to read and execute only.
+**Before:** `drwxrwxr-x`
+**After:** `drwxr-xr-x`
+
+**Result:** Owner retains full access; group and others restricted to read and execute only.
+
+### Screenshot 3 — chmod 755 Coach (numeric method)
+> *Insert screenshot: `03-change_mod_numerical.png` — shows `chmod 755 Coach` command and `ls -l` output confirming permission change*
+
+![chmod 755 Coach](screenshots/03-change_mod_numerical.png)
 
 ---
 
@@ -168,6 +185,11 @@ chmod u-x Templates
 
 **Result:** Owner can no longer execute (traverse) the directory. Group and others unaffected.
 
+### Screenshot 4 — chmod u-x Templates (symbolic remove)
+> *Insert screenshot: `04-chmod_symbolic.png` — shows `chmod u-x Templates` command and `ls -l` confirming execute bit removed from owner*
+
+![chmod u-x Templates](screenshots/04-chmod_symbolic.png)
+
 ---
 
 ### Task 3 — Symbolic: Remove execute from all on Templates
@@ -181,6 +203,11 @@ chmod a-x Templates
 **After:** `drw-r--r--`
 
 **Result:** Execute bit removed across all user categories.
+
+### Screenshot 5 — chmod a-x Templates (remove execute all)
+> *Insert screenshot: `05-chmod-remove_xtemplate.png` — shows `chmod a-x Templates` command and `ls -l` confirming execute removed from all*
+
+![chmod a-x Templates](screenshots/05-chmod-remove_xtemplate.png)
 
 ---
 
@@ -196,6 +223,11 @@ chmod a+w Templates
 
 **Result:** Write permission added for owner, group, and others simultaneously.
 
+### Screenshot 6 — chmod a+w Templates (add write all)
+> *Insert screenshot: `06-chmod_add_wtemplates.png` — shows `chmod a+w Templates` command and `ls -l` confirming write added for all*
+
+![chmod a+w Templates](screenshots/06-chmod_add_wtemplates.png)
+
 ---
 
 ### Task 5 — Symbolic: Set exact permissions rx for all on Templates
@@ -209,6 +241,11 @@ chmod a=rx Templates
 **After:** `dr-xr-xr-x`
 
 **Result:** All previous permissions replaced. Every user category now has read and execute only. Write access removed entirely.
+
+### Screenshot 7 — chmod a=rx Templates (set equal)
+> *Insert screenshot: `07-.png` — shows `chmod a=rx Templates` command and `ls -l` confirming exact permissions set*
+
+![chmod a=rx Templates](screenshots/07-.png)
 
 ---
 
@@ -224,6 +261,11 @@ chmod a-rx Downloads
 
 **Result:** Downloads directory becomes inaccessible for listing or traversal by all users. Only owner write permission remains — a highly restrictive state.
 
+### Screenshot 8 — chmod a-rx Downloads (remove rx all)
+> *Insert screenshot: `08-chmod_remove-rx_Downloads.png` — shows `chmod a-rx Downloads` command and `ls -l` confirming rx removed from all users*
+
+![chmod a-rx Downloads](screenshots/08-chmod_remove-rx_Downloads.png)
+
 ---
 
 ### Task 7 — Symbolic: Set write only for all on Public
@@ -237,6 +279,11 @@ chmod a=w Public
 **After:** `d-w--w--w-`
 
 **Result:** All users can only write. Read and execute stripped entirely. The directory cannot be listed or traversed — demonstrating how `=` replaces rather than adds.
+
+### Screenshot 9 — chmod a=w Public (set write only)
+> *Insert screenshot: `09-chmod-equal_wpublic.png` — shows `chmod a=w Public` command and `ls -l` confirming write-only set for all*
+
+![chmod a=w Public](screenshots/09-chmod-equal_wpublic.png)
 
 ---
 
@@ -338,6 +385,27 @@ chmod a=w [target]    # Set write only for all (replaces existing)
 - Least privilege access control principles
 - File system security auditing and hardening
 - Recognition of common permission misconfigurations and their security implications
+
+---
+
+## Repository Structure
+
+```
+linux-permission-audit/
+├── README.md
+└── screenshots/
+    ├── 01.png
+    ├── 02.png
+    ├── 03-change_mod_numerical.png
+    ├── 04-chmod_symbolic.png
+    ├── 05-chmod-remove_xtemplate.png
+    ├── 06-chmod_add_wtemplates.png
+    ├── 07-.png
+    ├── 08-chmod_remove-rx_Downloads.png
+    └── 09-chmod-equal_wpublic.png
+```
+
+> **Upload instructions:** Create a `screenshots/` folder in your repository root and upload all 9 images into it. The README will automatically render them inline next to each corresponding task.
 
 ---
 
