@@ -388,32 +388,13 @@ chmod a=w [target]    # Set write only for all (replaces existing)
 
 ---
 
-## Repository Structure
 
-```
-linux-permission-audit/
-├── README.md
-└── screenshots/
-    ├── 01.png
-    ├── 02.png
-    ├── 03-change_mod_numerical.png
-    ├── 04-chmod_symbolic.png
-    ├── 05-chmod-remove_xtemplate.png
-    ├── 06-chmod_add_wtemplates.png
-    ├── 07-.png
-    ├── 08-chmod_remove-rx_Downloads.png
-    └── 09-chmod-equal_wpublic.png
-```
 
-> **Upload instructions:** Create a `screenshots/` folder in your repository root and upload all 9 images into it. The README will automatically render them inline next to each corresponding task.
-
----
 
 ## Author
 
-**Cybersecurity Analyst | Loram Maintenance of Way**
-Certifications: CCNA | Microsoft Azure | AWS | CompTIA Security+ | Python
-Education: Post-Graduate Diploma in Business Analytics | Diploma in French
+**Cybersecurity Analyst | HypertechAi**
+Certifications: CCNA | Microsoft Azure | AWS | CompTIA Security+ | Python | Cybersecurity
 Currently pursuing: Advanced Cybersecurity Specialisation
 
 ---
