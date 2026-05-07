@@ -13,7 +13,7 @@
 | **Environment** | Kali Linux — `/home/kali` |
 | **Methods Used** | Numeric (Octal) and Symbolic (`chmod`) |
 | **Core Principle** | Least Privilege Access Control |
-| **Analyst** | Senior Cybersecurity Analyst |
+| **Analyst** | Olayemi Owoeye |
 | **Relevance** | SOC Operations, Linux Hardening, Access Management |
 
 ---
