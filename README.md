@@ -85,12 +85,12 @@ pwd
 ### Screenshot 1 — Baseline directory listing and working directory confirmation
 > *Insert screenshot: `01.png` — shows `ls` and `pwd` output confirming working directory at `/home/kali`*
 
-![Baseline directory listing](screenshots/01.png)
+![Baseline directory listing](https://raw.githubusercontent.com/Yem-Tech/Linux-Permission-Audit/4fce969e1f641b8c1fb0fe96ccbe054aa840e21e/Screenshots/01.png)
 
 ### Screenshot 2 — Directory and file creation
 > *Insert screenshot: `02.png` — shows `mkdir Footballer Coach`, `touch textfile.tx`, and updated `ls` confirming new entries*
 
-![Directory and file creation](screenshots/02.png)
+![Directory and file creation](https://raw.githubusercontent.com/Yem-Tech/Linux-Permission-Audit/4fce969e1f641b8c1fb0fe96ccbe054aa840e21e/Screenshots/02.png)
 
 ---
 
@@ -169,7 +169,7 @@ chmod 755 Coach
 ### Screenshot 3 — chmod 755 Coach (numeric method)
 > *Insert screenshot: `03-change_mod_numerical.png` — shows `chmod 755 Coach` command and `ls -l` output confirming permission change*
 
-![chmod 755 Coach](screenshots/03-change_mod_numerical.png)
+![chmod 755 Coach](https://raw.githubusercontent.com/Yem-Tech/Linux-Permission-Audit/4fce969e1f641b8c1fb0fe96ccbe054aa840e21e/Screenshots/03-change_mod_numerical.png)
 
 ---
 
@@ -188,7 +188,7 @@ chmod u-x Templates
 ### Screenshot 4 — chmod u-x Templates (symbolic remove)
 > *Insert screenshot: `04-chmod_symbolic.png` — shows `chmod u-x Templates` command and `ls -l` confirming execute bit removed from owner*
 
-![chmod u-x Templates](screenshots/04-chmod_symbolic.png)
+![chmod u-x Templates](https://raw.githubusercontent.com/Yem-Tech/Linux-Permission-Audit/4fce969e1f641b8c1fb0fe96ccbe054aa840e21e/Screenshots/04-chmod_symbolic.png)
 
 ---
 
@@ -207,7 +207,7 @@ chmod a-x Templates
 ### Screenshot 5 — chmod a-x Templates (remove execute all)
 > *Insert screenshot: `05-chmod-remove_xtemplate.png` — shows `chmod a-x Templates` command and `ls -l` confirming execute removed from all*
 
-![chmod a-x Templates](screenshots/05-chmod-remove_xtemplate.png)
+![chmod a-x Templates](https://raw.githubusercontent.com/Yem-Tech/Linux-Permission-Audit/4fce969e1f641b8c1fb0fe96ccbe054aa840e21e/Screenshots/05-chmod-remove_xtemplate.png)
 
 ---
 
@@ -226,7 +226,7 @@ chmod a+w Templates
 ### Screenshot 6 — chmod a+w Templates (add write all)
 > *Insert screenshot: `06-chmod_add_wtemplates.png` — shows `chmod a+w Templates` command and `ls -l` confirming write added for all*
 
-![chmod a+w Templates](screenshots/06-chmod_add_wtemplates.png)
+![chmod a+w Templates](https://raw.githubusercontent.com/Yem-Tech/Linux-Permission-Audit/4fce969e1f641b8c1fb0fe96ccbe054aa840e21e/Screenshots/06-chmod_add_wtemplates.png)
 
 ---
 
@@ -245,7 +245,7 @@ chmod a=rx Templates
 ### Screenshot 7 — chmod a=rx Templates (set equal)
 > *Insert screenshot: `07-.png` — shows `chmod a=rx Templates` command and `ls -l` confirming exact permissions set*
 
-![chmod a=rx Templates](screenshots/07-.png)
+![chmod a=rx Templates](https://raw.githubusercontent.com/Yem-Tech/Linux-Permission-Audit/4fce969e1f641b8c1fb0fe96ccbe054aa840e21e/Screenshots/07-chmod_equal_rx_templates.png)
 
 ---
 
@@ -264,7 +264,7 @@ chmod a-rx Downloads
 ### Screenshot 8 — chmod a-rx Downloads (remove rx all)
 > *Insert screenshot: `08-chmod_remove-rx_Downloads.png` — shows `chmod a-rx Downloads` command and `ls -l` confirming rx removed from all users*
 
-![chmod a-rx Downloads](screenshots/08-chmod_remove-rx_Downloads.png)
+![chmod a-rx Downloads](https://raw.githubusercontent.com/Yem-Tech/Linux-Permission-Audit/4fce969e1f641b8c1fb0fe96ccbe054aa840e21e/Screenshots/08-chmod_remove-rx_Downloads.png)
 
 ---
 
@@ -283,7 +283,7 @@ chmod a=w Public
 ### Screenshot 9 — chmod a=w Public (set write only)
 > *Insert screenshot: `09-chmod-equal_wpublic.png` — shows `chmod a=w Public` command and `ls -l` confirming write-only set for all*
 
-![chmod a=w Public](screenshots/09-chmod-equal_wpublic.png)
+![chmod a=w Public](https://raw.githubusercontent.com/Yem-Tech/Linux-Permission-Audit/4fce969e1f641b8c1fb0fe96ccbe054aa840e21e/Screenshots/09-chmod-equal_wpublic.png)
 
 ---
 
